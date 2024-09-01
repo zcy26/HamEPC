@@ -147,7 +147,7 @@ $$ {g}_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right ) = {g}^{\mathrm{S}}_ {mn\n
 Then, we can split scattering rate into two parts, as:
 $$\left [ \frac{1}{\tau} \right ]_ {\mathrm{Polar} } = \frac{2\pi}{\hbar} \sum_{\mathbf{q} m\nu } {\left | {g}^{\mathrm{L}}_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )  \right | }^{2} F_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )$$
 
-$$\left [ \frac{1}{\tau} \right ]_ {\mathrm{Remainder} } = \frac{2\pi}{\hbar} \sum_ {\mathbf{q} m\nu } \left ( {\left | {g}_{mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )  \right | }^{2} - {\left | {g}^{\mathrm{L}}_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )  \right | }^{2} \right )  F_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )$$
+$$\left [ \frac{1}{\tau} \right ]_ {\mathrm{Remainder} } = \frac{2\pi}{\hbar} \sum_ {\mathbf{q} m\nu } \left ( {\left | {g}_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )  \right | }^{2} - {\left | {g}^{\mathrm{L}}_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )  \right | }^{2} \right )  F_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )$$
 
 When `polar_split = 'polar'`, the code will calculate the polar part of the scattering rate, and when `polar_split = 'rmp'`, the code will calculate the remainder part. In addition, when `polar_split = 'none'`, the code will calculate the scattering rate without spliting it into two parts.
 
