@@ -142,12 +142,12 @@ We use some smearing methods to approximate the delta function.
 
 For mobility calculation in polar materials, we divide the electron-phonon coupling term into two parts using the method in [Phys. Rev. B 94, 20 (2016)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.94.201201):
 
-$$ {g}_{mn\nu}\left ( \mathbf{k}, \mathbf{q} \right ) = {g}^{\mathrm{S}}_{mn\nu}\left ( \mathbf{k}, \mathbf{q} \right ) + {g}^{\mathrm{L}}_{mn\nu}\left ( \mathbf{k}, \mathbf{q} \right ) $$
+$$ {g}_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right ) = {g}^{\mathrm{S}}_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right ) + {g}^{\mathrm{L}}_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right ) $$
 
 Then, we can split scattering rate into two parts, as:
-$$\left [ \frac{1}{\tau} \right ]_{\mathrm{Polar} } = \frac{2\pi}{\hbar} \sum_{\mathbf{q} m\nu } {\left | {g}^{\mathrm{L}}_{mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )  \right | }^{2} F_{mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )$$
+$$\left [ \frac{1}{\tau} \right ]_ {\mathrm{Polar} } = \frac{2\pi}{\hbar} \sum_{\mathbf{q} m\nu } {\left | {g}^{\mathrm{L}}_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )  \right | }^{2} F_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )$$
 
-$$\left [ \frac{1}{\tau} \right ]_{\mathrm{Remainder} } = \frac{2\pi}{\hbar} \sum_{\mathbf{q} m\nu } \left ( {\left | {g}_{mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )  \right | }^{2} - {\left | {g}^{\mathrm{L}}_{mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )  \right | }^{2} \right )  F_{mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )$$
+$$\left [ \frac{1}{\tau} \right ]_ {\mathrm{Remainder} } = \frac{2\pi}{\hbar} \sum_ {\mathbf{q} m\nu } \left ( {\left | {g}_{mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )  \right | }^{2} - {\left | {g}^{\mathrm{L}}_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )  \right | }^{2} \right )  F_ {mn\nu}\left ( \mathbf{k}, \mathbf{q} \right )$$
 
 When `polar_split = 'polar'`, the code will calculate the polar part of the scattering rate, and when `polar_split = 'rmp'`, the code will calculate the remainder part. In addition, when `polar_split = 'none'`, the code will calculate the scattering rate without spliting it into two parts.
 
@@ -170,11 +170,11 @@ To ensure the effective convergence of the integration results on the $\mathbf{q
 ### Band Velocity<a id="velocity"></a>
 
 For `read_momentum = True`, we calculate the band velocity of electrons using: 
-$$ \mathbf{v}_{\mathbf{k}n,\alpha} = \frac{1}{\hbar} \frac{d\epsilon_{\mathbf{k}n}}{d\mathbf{k}_\alpha} = \frac{1}{\hbar} \langle n\mathbf{k} | \frac{dH_\mathbf{k}}{dk_\alpha} - \epsilon_{\mathbf{k}n}\frac{dS_\mathbf{k}}{dk_\alpha} | n\mathbf{k} \rangle $$
+$$ \mathbf{v}_ {\mathbf{k}n,\alpha} = \frac{1}{\hbar} \frac{d\epsilon_ {\mathbf{k}n}}{d\mathbf{k}_ \alpha} = \frac{1}{\hbar} \langle n\mathbf{k} | \frac{dH_ \mathbf{k}}{dk_ \alpha} - \epsilon_ {\mathbf{k}n}\frac{dS_ \mathbf{k}}{dk_ \alpha} | n\mathbf{k} \rangle $$
 
 For `read_momentum = False`, we calculate the band velocity of electrons using:
 
-$$ \mathbf{v}_{\mathbf{k}n,\alpha} = \langle n\mathbf{k} | p_\alpha | n\mathbf{k} \rangle $$
+$$ \mathbf{v}_ {\mathbf{k}n,\alpha} = \langle n\mathbf{k} | p_ \alpha | n\mathbf{k} \rangle $$
 
 ## Explanation of Input Parameters
 
